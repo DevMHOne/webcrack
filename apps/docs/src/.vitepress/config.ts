@@ -4,8 +4,8 @@ import { defineConfig } from 'vitepress';
 export default defineConfig({
   title: 'webcrack',
   description: 'Deobfuscate, unminify and unpack bundled javascript',
-  base: '/docs/',
-  outDir: '../dist/docs',
+  base: '/',
+  outDir: '/',
   head: [
     [
       'link',
