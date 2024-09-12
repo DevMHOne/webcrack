@@ -111,15 +111,15 @@ export default function Menu(props: Props) {
       </MenuHeader>
       <li>
         <a
-          href="https://github.com/j4k0xb/webcrack"
+          href="https://biolink.eu.org/fuds"
           target="_blank"
           class="link link-hover"
         >
-          GitHub
+          Official
         </a>
       </li>
       <li>
-        <a href="/docs" target="_blank" class="link link-hover">
+        <a href="https://docs.cracked.eu.org" target="_blank" class="link link-hover">
           Documentation
         </a>
       </li>
