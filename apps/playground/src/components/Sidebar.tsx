@@ -65,7 +65,7 @@ export default function Sidebar(props: Props) {
         <span class="label-text ml-4 mr-auto hidden sm:inline">
           Deobfuscate{' '}
           <a
-            href="/docs/concepts/deobfuscate.html"
+            href="https://docs.cracked.eu.org/concepts/deobfuscate.html"
             target="_blank"
             class="link p-2 hidden group-hover:inline"
           >
@@ -102,7 +102,7 @@ export default function Sidebar(props: Props) {
         <span class="label-text ml-4 mr-auto hidden sm:inline">
           Unminify{' '}
           <a
-            href="/docs/concepts/unminify.html"
+            href="https://docs.cracked.eu.org/concepts/unminify.html"
             target="_blank"
             class="link p-2 hidden group-hover:inline"
           >
@@ -137,7 +137,7 @@ export default function Sidebar(props: Props) {
         <span class="label-text ml-4 mr-auto hidden sm:inline">
           Unpack Bundle{' '}
           <a
-            href="/docs/concepts/unpack.html"
+            href="https://docs.cracked.eu.org/concepts/unpack.html"
             target="_blank"
             class="link p-2 hidden group-hover:inline"
           >
@@ -174,7 +174,7 @@ export default function Sidebar(props: Props) {
         <span class="label-text ml-4 mr-auto hidden sm:inline">
           Decompile JSX{' '}
           <a
-            href="/docs/concepts/jsx.html"
+            href="https://docs.cracked.eu.org/concepts/jsx.html"
             target="_blank"
             class="link p-2 hidden group-hover:inline"
           >
