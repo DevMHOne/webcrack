@@ -1,0 +1,17 @@
+{
+  "extends": "@webcrack/typescript-config/vite.json",
+  "compilerOptions": {
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+    "paths": {
+      "webcrack": [
+        "../../packages/webcrack/src"
+      ]
+    }
+  },
+  "include": [
+    "src",
+    "*.ts",
+    "../../packages/webcrack/src/**/*.d.ts",
+  ]
+}

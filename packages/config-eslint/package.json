@@ -1,0 +1,16 @@
+{
+  "name": "@webcrack/eslint-config",
+  "version": "0.0.0",
+  "main": "index.js",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./eslint.config.js"
+    }
+  },
+  "dependencies": {
+    "eslint-config-prettier": "^10.1.1",
+    "typescript-eslint": "^8.29.0"
+  }
+}

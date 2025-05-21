@@ -1,0 +1,16 @@
+{
+  "extends": "@webcrack/typescript-config/base.json",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "emitDeclarationOnly": true
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "**/test",
+    "src/cli.ts",
+    "src/cjs-wrapper.ts"
+  ]
+}

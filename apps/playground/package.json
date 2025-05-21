@@ -1,0 +1,41 @@
+{
+  "name": "playground",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx,md}\"",
+    "format": "prettier --write \"src/**/*.{ts,tsx,md}\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.17",
+    "@tailwindcss/vite": "^4.0.17",
+    "@types/babel__generator": "^7.27.0",
+    "@types/node": "^22.13.16",
+    "@webcrack/eslint-config": "workspace:*",
+    "@webcrack/typescript-config": "workspace:*",
+    "daisyui": "^5.0.9",
+    "tailwindcss": "^4.0.17",
+    "typescript": "^5.8.2",
+    "vite": "^6.2.4",
+    "vite-plugin-monaco-editor": "^1.1.0",
+    "vite-plugin-node-polyfills": "^0.23.0",
+    "vite-plugin-solid": "^2.11.6"
+  },
+  "dependencies": {
+    "@babel/generator": "^7.27.1",
+    "@babel/types": "^7.27.1",
+    "@zip.js/zip.js": "^2.7.60",
+    "idb": "^8.0.2",
+    "monaco-editor": "^0.52.2",
+    "sandybox": "^1.1.2",
+    "solid-js": "^1.9.5",
+    "webcrack": "workspace:*"
+  }
+}

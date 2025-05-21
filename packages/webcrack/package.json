@@ -1,0 +1,81 @@
+{
+  "name": "webcrack",
+  "version": "2.16.0-beta.1",
+  "description": "Deobfuscate, unminify and unpack bundled javascript",
+  "author": "j4k0xb",
+  "license": "MIT",
+  "type": "module",
+  "bin": "src/cli-wrapper.js",
+  "main": "dist/index.cjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "src/cli-wrapper.js"
+  ],
+  "scripts": {
+    "build": "node esbuild.config.js && tsc -p tsconfig.build.json",
+    "watch": "node esbuild.config.js --watch",
+    "start": "node dist/cli.js",
+    "tmp": "node esbuild.config.js && node --enable-source-maps dist/cli.js tmp/test.js -f -o tmp/webcrack-out",
+    "lint": "eslint src test",
+    "lint:fix": "eslint src test --fix",
+    "format:check": "prettier --check \"{src,test}/**/*.ts\"",
+    "format": "prettier --write \"{src,test}**/*.ts\"",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest --no-isolate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/j4k0xb/webcrack"
+  },
+  "homepage": "https://webcrack.netlify.app",
+  "keywords": [
+    "webpack",
+    "bundle",
+    "extract",
+    "reverse-engineering",
+    "ast",
+    "deobfuscation",
+    "unpack",
+    "debundle",
+    "deobfuscator",
+    "unminify",
+    "unbundle"
+  ],
+  "dependencies": {
+    "@babel/generator": "^7.27.1",
+    "@babel/helper-validator-identifier": "^7.27.1",
+    "@babel/parser": "^7.27.2",
+    "@babel/template": "^7.27.2",
+    "@babel/traverse": "^7.27.1",
+    "@babel/types": "^7.27.1",
+    "@codemod/matchers": "^1.7.1",
+    "commander": "^13.1.0",
+    "debug": "^4.4.0",
+    "isolated-vm": "^5.0.4"
+  },
+  "devDependencies": {
+    "@types/babel__generator": "^7.6.8",
+    "@types/babel__helper-validator-identifier": "^7.15.2",
+    "@types/babel__template": "^7.4.4",
+    "@types/babel__traverse": "^7.20.7",
+    "@types/debug": "^4.1.12",
+    "@types/node": "^22.13.16",
+    "@webcrack/eslint-config": "workspace:*",
+    "@webcrack/typescript-config": "workspace:*",
+    "esbuild": "^0.25.2",
+    "typescript": "^5.8.2"
+  }
+}
