@@ -144,7 +144,7 @@ export default function Menu(props: Props) {
       </MenuHeader>
       <li>
         <a
-          href="https:/ngobrol.eu.org"
+          href="https://ngobrol.eu.org"
           target="_blank"
           class="link link-hover"
         >
